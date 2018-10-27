@@ -25,7 +25,6 @@ String b64 = Base64.getEncoder().encodeToString(ciphertext.array());
 System.out.println("Encrypted value: "+ b64);
 
 // Decrypt a data key
-//
 
 DecryptRequest dreq = new DecryptRequest().withCiphertextBlob(ByteBuffer.wrap(Base64.getDecoder().decode(b64)));
 ByteBuffer plainText = kmsClient.decrypt(dreq).getPlaintext();
