@@ -11,6 +11,12 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <dependencies>
+<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-kms -->
+<dependency>
+    <groupId>com.amazonaws</groupId>
+    <artifactId>aws-java-sdk-kms</artifactId>
+    <version>1.11.437</version>
+</dependency>
 <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
 <dependency>
     <groupId>com.amazonaws</groupId>
